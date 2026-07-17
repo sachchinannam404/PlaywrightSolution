@@ -1,0 +1,19 @@
+{
+  "name": "playwrightsolution",
+  "version": "1.0.0",
+  "description": "Scalable Playwright automation framework for the Returns application across personas and countries.",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:external": "playwright test --grep @external",
+    "test:internal": "playwright test --grep @internal",
+    "test:country": "playwright test --grep @country",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.3"
+  }
+}
